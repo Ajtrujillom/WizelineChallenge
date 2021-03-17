@@ -1,0 +1,15 @@
+{
+  "name": "testcafe_saucedemo",
+  "version": "1.0.0",
+  "description": "Testcafe SauceDemo",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome ./POM/test/challenge.test.js",
+    "multibrowser":"testcafe firefox,chrome ./POM/test/challenge.test.js"
+  },
+  "author": "Andres Trujillo",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
