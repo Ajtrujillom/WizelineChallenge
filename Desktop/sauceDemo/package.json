@@ -4,12 +4,13 @@
   "description": "Testcafe SauceDemo",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome ./POM/test/challenge.test.js",
-    "multibrowser":"testcafe firefox,chrome ./POM/test/challenge.test.js"
+    "test": "testcafe chrome ./POM/test/challenge.test.js --reporter list",
+    "multibrowser": "testcafe firefox,chrome ./POM/test/challenge.test.js --reporter list"
   },
   "author": "Andres Trujillo",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "testcafe-reporter-list": "^2.1.0"
   }
 }
